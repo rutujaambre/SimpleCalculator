@@ -15,7 +15,7 @@ using System;
                 Environment.Exit(1);  // Exit with non-zero status
             }
 
-            string input = args[0];    //stores i/p in variable "expression"
+            string input = args[0];    //stores i/p in variable "input var"
 
             string numbersTemp = "";            //temp hold digit while parsing
             int[] numbers = new int[100];       //store parsed numbers
@@ -38,7 +38,7 @@ using System;
                         return;
                     }
 
-                    numbers[numCount++] = int.Parse(numbersTemp);
+                    numbers[numCount++] = int.Parse(numbersTemp); // change
                     operators[opCount++] = c;
                     numbersTemp = "";
                 }
